@@ -32,7 +32,7 @@ class SearchProvider(ABC):
 | `TavilyProvider` (`tavily.py`) | `tavily-python` | required | `TavilyClient.search()` → `SearchResult` | 2.3 |
 | `BraveSearchProvider` (`brave.py`) | `httpx` → `GET api.search.brave.com/res/v1/web/search` | required | JSON `web.results[]` → `SearchResult` | 2.4 |
 
-## Configuration Model (ref: req-07-config)
+## Configuration Model (ref: req-5-config)
 
 Pydantic validates the provider and required credentials at load time (Req 2.7–2.9):
 

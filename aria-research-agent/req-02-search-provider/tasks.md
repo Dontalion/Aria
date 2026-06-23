@@ -1,7 +1,7 @@
-# Tasks — Req 02: Search Provider Abstraction
+# Tasks — Req 2: Search Provider Abstraction
 
 ## Dependencies
-- Req 07 (Config) — needs ConfigSchema and SearchConfig (provider, api_key, max_results)
+- Req 5 (Config) — needs ConfigSchema and SearchConfig (provider, api_key, max_results)
 
 ## Tasks
 
@@ -41,7 +41,7 @@
   - _Requirements: 2.5, 2.6_
 
 - [ ] 7. Define and validate SearchConfig at load time
-  - Add `SearchConfig` (in req-07 config schema) with `provider` Literal (duckduckgo, tavily, brave) and `api_key`
+  - Add `SearchConfig` (in req-5 config schema) with `provider` Literal (duckduckgo, tavily, brave) and `api_key`
   - Require an API key credential for Tavily and Brave; reject unsupported provider or missing key, log the invalid field, and exit before any search
   - _Requirements: 2.7, 2.8, 2.9_
 

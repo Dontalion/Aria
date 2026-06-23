@@ -1,7 +1,7 @@
-# Tasks — Req 01: LLM Provider Abstraction
+# Tasks — Req 1: LLM Provider Abstraction
 
 ## Dependencies
-- Req 07 (Config) — needs ConfigSchema and LLMConfig (provider type, model, params, timeout, retry limit)
+- Req 5 (Config) — needs ConfigSchema and LLMConfig (provider type, model, params, timeout, retry limit)
 
 ## Tasks
 
@@ -47,7 +47,7 @@
   - _Requirements: 1.6, 1.7_
 
 - [ ] 8. Define and validate LLMConfig bounds at load time
-  - Add `LLMConfig` (in req-07 config schema) with `provider` Literal, temperature 0.0–2.0, max_tokens ≥ 1, request_timeout 1–600s, max_retries 0–10
+  - Add `LLMConfig` (in req-5 config schema) with `provider` Literal, temperature 0.0–2.0, max_tokens ≥ 1, request_timeout 1–600s, max_retries 0–10
   - Reject unsupported provider type or out-of-bounds parameter before starting any task, reporting the invalid field
   - _Requirements: 1.8, 1.9, 1.10_
 

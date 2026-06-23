@@ -34,7 +34,7 @@ class LLMProviderError(Exception):
 ```python
 # src/aria/providers/llm/__init__.py
 from aria.providers.base import LLMProvider
-from aria.config.schema import LLMConfig  # Defined in req-07
+from aria.config.schema import LLMConfig  # Defined in req-5
 
 def create_llm_provider(config: LLMConfig) -> LLMProvider:
     """Instantiate the correct provider from validated config."""
@@ -55,7 +55,7 @@ def create_llm_provider(config: LLMConfig) -> LLMProvider:
             raise ValueError(f"Unknown LLM provider: {config.provider}")
 ```
 
-## Configuration Model (ref: req-07-config)
+## Configuration Model (ref: req-5-config)
 
 Pydantic enforces every bound at load time (Req 1.8–1.10):
 
